@@ -44,11 +44,11 @@ rotateVerses(); // Show first verse immediately
 
 // Best Wishes
 const quoteDisplay = document.getElementById('quote');
-quoteDisplay.innerText = "Oasis, your hard work will pay off!"; // Fixed message
+quoteDisplay.innerText = "LJ, your hard work will pay off!"; // Fixed message
 const additionalQuote = document.createElement('p');
 additionalQuote.innerText = "It's time to geek out a bit.";
 quoteDisplay.appendChild(additionalQuote);
 
 // Secret Console Message
-console.log("Hey, Oasis! Just a little reminder: You've got this! ❤");
+console.log("Hey, LJ! Just a little reminder: You've got this! ❤");
 
