@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #ffe0ec, #f5d0ff, #dce8ff);
+    min-height: 100vh;
+    color: #333;
+}
+
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    color: #a100ff;
+    margin-bottom: 15px;
+}
+
+.subtitle {
+    font-size: 1.3rem;
+    max-width: 700px;
+    margin: auto;
+}
+
+.music-player {
+    text-align: center;
+    padding: 20px;
+}
+
+.music-player audio {
+    width: 300px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    padding: 30px;
+}
+
+.card {
+    width: 320px;
+    background: white;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    transition: 0.4s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card h2 {
+    color: #b400ff;
+    margin-bottom: 15px;
+}
+
+.prayer-card {
+    background: #fff8e8;
+}
+
+.love-letter {
+    width: 90%;
+    max-width: 850px;
+    margin: 50px auto;
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.love-letter h2 {
+    text-align: center;
+    color: #b400ff;
+    margin-bottom: 20px;
+}
+
+.love-letter p {
+    line-height: 1.8;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    color: #555;
+}
+
+.floating-heart {
+    position: fixed;
+    font-size: 20px;
+    animation: float 6s linear infinite;
+    opacity: .7;
+}
+
+@keyframes float {
+    from {
+        transform: translateY(100vh);
+    }
+
+    to {
+        transform: translateY(-100px);
+    }
+}
+
+@media(max-width:768px) {
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .card {
+        width: 90%;
+    }
+}
+
+.gallery {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.gallery h2 {
+    color: #b400ff;
+    margin-bottom: 20px;
+}
+
+.gallery-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.gallery-container img {
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    transition: 0.3s;
+}
+
+.gallery-container img:hover {
+    transform: scale(1.05);
+}
