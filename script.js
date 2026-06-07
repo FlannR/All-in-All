@@ -91,3 +91,14 @@ You are prayed for.
 
 ❤️`
 );
+
+function openSite() {
+    document.getElementById("intro-screen").style.display = "none";
+
+    const music = document.querySelector("audio");
+
+    // safer mobile play trigger
+    if (music) {
+        music.play().catch(() => { });
+    }
+}
