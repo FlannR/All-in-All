@@ -187,3 +187,15 @@ footer {
     font-size: 16px;
     cursor: pointer;
 }
+
+@keyframes floatUp {
+    from {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    to {
+        transform: translateY(-120vh);
+        opacity: 0;
+    }
+}

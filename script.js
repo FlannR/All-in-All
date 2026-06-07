@@ -102,3 +102,20 @@ function openSite() {
         music.play().catch(() => { });
     }
 }
+
+function createHeart() {
+    const heart = document.createElement("div");
+    heart.innerHTML = "❤️";
+    heart.style.position = "fixed";
+    heart.style.left = Math.random() * 100 + "vw";
+    heart.style.top = "100vh";
+    heart.style.fontSize = "20px";
+    heart.style.opacity = "0.7";
+    heart.style.animation = "floatUp 5s linear";
+
+    document.body.appendChild(heart);
+
+    setTimeout(() => heart.remove(), 5000);
+}
+
+setInterval(createHeart, 400);
